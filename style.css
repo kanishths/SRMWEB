@@ -1,0 +1,81 @@
+/* * {
+    box-sizing: border-box;
+  } */
+  
+  /* Create three equal columns that floats next to each other */
+  .row{
+      width: 100%;
+  }
+  .column {
+    float: left;
+    width: 19.5%;
+    padding: 10px;
+    
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 900px) {
+    .column {
+      width: 100%;
+    }
+  }
+
+
+  .col-box {
+    position: relative; }
+    .col-box input[type=email] {
+      padding: 14px 28px;
+      border-radius: 50px;
+      background: #2E2E2E;
+      border: 1px solid #2E2E2E; }
+    .col-box input::-webkit-input-placeholder, .col-box input::-moz-placeholder, .col-box input:-ms-input-placeholder, .col-box input::-ms-input-placeholder, .col-box input::-webkit-input-placeholder {
+      color: #878787;
+      font-size: 14px; }
+    .col-box input::-webkit-input-placeholder, .col-box input::-moz-placeholder, .col-box input:-ms-input-placeholder, .col-box input::-ms-input-placeholder, .col-box input::placeholder {
+      color: #878787;
+      font-size: 14px; }
+  .col-box button[type=submit] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 12px 24px 12px 17px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border: 1px solid #007bff;
+    background: #007bff;
+    color: #fff; }
+  .col-box button:hover {
+    cursor: pointer; }
+
+    .footer-classic a, .footer-classic a:focus, .footer-classic a:active {
+        color: #ffffff;
+    }
+
+    .context-dark, .bg-gray-dark, .bg-primary {
+        color: rgba(255, 255, 255, 0.8);
+    }
+
+    .social-inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 23px;
+        font: 900 13px/1 "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.5);
+    }
+    .social-container .col {
+        border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .cpy{
+        width: 100%;
+    }
